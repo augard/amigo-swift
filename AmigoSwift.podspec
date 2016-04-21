@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = "AmigoSwift"
-    s.version          = "0.3.3"
+    s.version          = "0.3.3.2"
     s.summary          = "A SQLite ORM for Swift 2.1+ powered by FMDB"
 
     # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     #   * Write the description between the DESC delimiters below.
     #   * Finally, don't worry about the indent, CocoaPods strips it!
     s.description      = <<-DESC
-    Warp Objective-C Framework for iOS and OS X. Collection of classes to make iOS development easy.
+    A SQLite ORM for Swift 2.1+ powered by FMDB
     DESC
 
     s.homepage         = "https://github.com/blitzagency/amigo-swift"
@@ -29,5 +29,6 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
     s.source_files = 'Amigo/**/*'
+    s.exclude_files = 'Amigo/AmigoMetaData.swift', 'Amigo/Amigo.h'
     s.dependency 'FMDB'
 end
