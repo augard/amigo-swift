@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = "AmigoSwift"
-    s.version          = "0.3.3.2"
+    s.version          = "0.3.3.3"
     s.summary          = "A SQLite ORM for Swift 2.1+ powered by FMDB"
 
     # This description is used to generate tags and improve search results.
@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
     s.platform     = :ios, '8.0'
     s.requires_arc = true
 
+    s.library = 'sqlite3'
     s.source_files = 'Amigo/**/*'
     s.exclude_files = 'Amigo/AmigoMetaData.swift', 'Amigo/Amigo.h'
     s.dependency 'FMDB'
